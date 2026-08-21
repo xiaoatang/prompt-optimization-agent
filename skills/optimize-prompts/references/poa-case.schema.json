@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.codex/poa-case.schema.json",
+  "title": "Prompt Optimization Agent Case",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "case_id",
+    "status",
+    "original_prompt",
+    "optimization_target",
+    "intent",
+    "requirements",
+    "invariants",
+    "assumptions",
+    "conflicts",
+    "decision_points",
+    "evidence_claims",
+    "enforcement_allocations",
+    "candidate_prompts",
+    "validation_results",
+    "limitations"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "case_id": {"type": "string", "minLength": 1},
+    "status": {
+      "enum": [
+        "RECEIVED", "INTERPRETED", "AUDITED", "NEEDS_USER_DECISION",
+        "NEEDS_DOMAIN_REVIEW", "NOT_A_PROMPT_PROBLEM", "READY_TO_COMPILE",
+        "COMPILED", "STATICALLY_CHECKED", "EMPIRICALLY_TESTED",
+        "CONDITIONALLY_APPROVED", "APPROVED", "REJECTED", "EXPIRED"
+      ]
+    },
+    "original_prompt": {"type": "string", "minLength": 1},
+    "optimization_target": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "enum": [
+            "user_prompt", "system_instruction", "reusable_template",
+            "tool_contract", "evaluator_prompt", "retrieval_policy",
+            "agent_workflow", "full_application"
+          ]
+        },
+        "runtime": {"type": ["object", "null"]}
+      },
+      "additionalProperties": true
+    },
+    "intent": {"type": "object"},
+    "requirements": {"type": "array"},
+    "invariants": {"type": "array"},
+    "assumptions": {"type": "array"},
+    "conflicts": {"type": "array"},
+    "decision_points": {"type": "array"},
+    "evidence_claims": {"type": "array"},
+    "enforcement_allocations": {"type": "array"},
+    "candidate_prompts": {"type": "array"},
+    "validation_results": {"type": "array"},
+    "limitations": {"type": "array"}
+  },
+  "additionalProperties": true
+}

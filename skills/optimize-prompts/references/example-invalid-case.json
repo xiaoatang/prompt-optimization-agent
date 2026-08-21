@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "case_id": "example-invalid-001",
+  "status": "APPROVED",
+  "original_prompt": "Write an analysis.",
+  "optimization_target": {"type": "user_prompt"},
+  "intent": {},
+  "requirements": [],
+  "invariants": [],
+  "assumptions": [],
+  "conflicts": [],
+  "decision_points": [
+    {
+      "id": "D-001",
+      "material": true,
+      "authorization_status": "pending"
+    }
+  ],
+  "evidence_claims": [],
+  "enforcement_allocations": [],
+  "candidate_prompts": [
+    {
+      "id": "P-001",
+      "semantic_changes": [
+        {
+          "id": "CH-001",
+          "impact": "S4",
+          "authorization_status": "pending"
+        }
+      ]
+    }
+  ],
+  "validation_results": [
+    {
+      "assurance_level": "S4_PRODUCTION_VALIDATED"
+    }
+  ],
+  "limitations": []
+}

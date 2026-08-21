@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "case_id": "example-001",
+  "status": "STATICALLY_CHECKED",
+  "original_prompt": "Write a professional analysis of our sales decline.",
+  "optimization_target": {
+    "type": "user_prompt",
+    "runtime": null
+  },
+  "intent": {
+    "primary_goal": {
+      "value": "Analyze a sales decline",
+      "status": "explicit",
+      "evidence_spans": ["analysis of our sales decline"]
+    }
+  },
+  "requirements": [],
+  "invariants": [
+    {
+      "id": "I-001",
+      "statement": "Preserve the analysis goal",
+      "source": "user_explicit"
+    }
+  ],
+  "assumptions": [],
+  "conflicts": [],
+  "decision_points": [],
+  "evidence_claims": [],
+  "enforcement_allocations": [],
+  "candidate_prompts": [
+    {
+      "id": "P-001",
+      "prompt": "Analyze the sales decline using the supplied period, baseline, and segment data.",
+      "semantic_changes": [
+        {
+          "id": "CH-001",
+          "impact": "S1",
+          "authorization_status": "not_required"
+        }
+      ]
+    }
+  ],
+  "validation_results": [
+    {
+      "assurance_level": "S1_STATICALLY_IMPROVED"
+    }
+  ],
+  "limitations": [
+    "No empirical comparison was performed."
+  ]
+}

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Prompt Optimization Agent"
+  short_description: "Audit, restructure, and validate prompts with explicit decision gates"
+  default_prompt: "Use $optimize-prompts to audit and optimize this prompt without silently changing its intent."
+
+policy:
+  allow_implicit_invocation: true

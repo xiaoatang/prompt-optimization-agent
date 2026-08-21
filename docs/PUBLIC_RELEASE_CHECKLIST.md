@@ -21,22 +21,23 @@ This checklist prevents a repository visibility change from being mistaken for a
 - [x] Valid fixture accepted and invalid fixture rejected.
 - [x] Codex Skill validator passed.
 - [x] Codex plugin validator passed.
-- [ ] GitHub private vulnerability reporting enabled after the repository becomes public.
-- [ ] GitHub secret scanning and push protection settings reviewed after visibility change.
-- [ ] Default branch protection or ruleset reviewed after visibility change.
+- [x] GitHub private vulnerability reporting enabled after the repository became public.
+- [x] GitHub Secret Scanning and Push Protection enabled and reviewed.
+- [x] Default branch ruleset prevents deletion and non-fast-forward updates to `main`.
+- [x] GitHub default CodeQL setup completed successfully.
 
 ## Distribution
 
 - [x] Public Skill installation procedure documented.
 - [x] README states that this repository is not yet a public marketplace catalog.
 - [ ] Public Codex marketplace catalog or listing created, if plugin-store distribution is desired.
-- [ ] Clean installation tested from the public repository after visibility change.
+- [x] Clean unauthenticated clone and validation tested from the public repository.
 
 ## Release
 
-- [ ] Repository owner reviews the consequences of public visibility.
-- [ ] Repository visibility changed explicitly by the owner.
-- [ ] Security settings reviewed immediately after the change.
-- [ ] Version tag and GitHub release created from the reviewed commit.
+- [x] Repository owner reviewed and explicitly accepted the consequences of public visibility.
+- [x] Repository visibility changed to Public.
+- [x] Security settings reviewed immediately after the change.
+- [x] Version tag and GitHub Release `v0.2.0` created from the reviewed commit.
 
 Do not mark the repository public merely because all automated checks pass. Public visibility makes the complete Git history available for reading and forking.

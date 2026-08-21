@@ -38,13 +38,25 @@ The valid fixture was accepted. The invalid fixture was rejected for:
 - an S4 production-validation claim without empirical evidence;
 - an S4 production-validation claim without production evidence.
 
+## Post-public verification
+
+- unauthenticated clone from the public HTTPS URL succeeded;
+- repository security scanner and valid fixture passed in the clean clone;
+- GitHub Validate workflow completed successfully;
+- GitHub default CodeQL setup completed successfully;
+- Secret Scanning and Push Protection are enabled;
+- Dependabot security updates are enabled;
+- private vulnerability reporting is enabled;
+- an active repository ruleset prevents deletion and non-fast-forward updates to `main`;
+- public release `v0.2.0` was created.
+
 ## Residual risks
 
 - Language-model behavior remains probabilistic and can change with model or runtime updates.
 - Static validation does not prove factual correctness, policy compliance, domain applicability, or empirical prompt improvement.
 - The Skill relies on the host Codex instruction hierarchy and tool permission system; it is not an independent sandbox.
 - Public marketplace distribution has not been implemented or tested.
-- GitHub security settings, private vulnerability reporting, clean public installation, and branch protection must be reviewed after the visibility change.
+- GitHub's additional non-provider secret patterns and secret-validity checks are not enabled; availability can depend on repository and account capabilities.
 - Automated secret scanning uses pattern matching and cannot guarantee that every sensitive value is detected.
 
 ## Reproduction

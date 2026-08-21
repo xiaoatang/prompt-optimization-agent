@@ -1,0 +1,54 @@
+name: Bug report
+description: Report a reproducible defect that is not a security vulnerability
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include credentials, private prompts, personal data, or vulnerability details. Follow SECURITY.md for security reports.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened, and what did you expect instead?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Plugin or commit version
+      placeholder: "0.2.0 or commit SHA"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Use synthetic or redacted prompt content.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Codex environment
+      description: Include relevant runtime, operating system, and installation method without exposing secrets.
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation evidence
+      description: Include validator output, logs, or screenshots after removing sensitive data.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I searched existing issues for duplicates.
+          required: true
+        - label: This report does not contain sensitive data or undisclosed vulnerability details.
+          required: true

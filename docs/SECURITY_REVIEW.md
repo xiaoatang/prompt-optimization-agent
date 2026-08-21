@@ -25,6 +25,7 @@ Scope: Git-tracked source, documentation, plugin metadata, Skill instructions, P
 3. The repository lacked vulnerability-reporting and contribution policies. `SECURITY.md` and `CONTRIBUTING.md` were added.
 4. The project had no repeatable public-release scan. A dependency-free scanner and CI workflow were added.
 5. Plugin author, repository, homepage, and stable release metadata were made suitable for public presentation.
+6. A Code of Conduct and structured issue forms were added so security reports are not directed into ordinary public issues.
 
 ## Results
 

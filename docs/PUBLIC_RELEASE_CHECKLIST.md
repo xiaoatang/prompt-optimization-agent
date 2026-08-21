@@ -8,6 +8,7 @@ This checklist prevents a repository visibility change from being mistaken for a
 - [x] Detectable `LICENSE` file matches the plugin manifest.
 - [x] `SECURITY.md` defines supported versions and private reporting guidance.
 - [x] `CONTRIBUTING.md` defines contribution and validation expectations.
+- [x] Code of Conduct and structured issue templates are present.
 - [x] Repository contains no personal marketplace file or installed Codex cache.
 - [x] No tracked symbolic links or unexpectedly large files.
 - [x] Runtime code has no third-party Python dependency.

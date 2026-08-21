@@ -24,6 +24,7 @@ REQUIRED_FILES = {
     "LICENSE",
     "SECURITY.md",
     "CONTRIBUTING.md",
+    "CODE_OF_CONDUCT.md",
     ".codex-plugin/plugin.json",
     "skills/optimize-prompts/SKILL.md",
 }

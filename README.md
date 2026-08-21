@@ -175,7 +175,7 @@ python3 skills/optimize-prompts/scripts/validate_case.py \
   skills/optimize-prompts/references/example-invalid-case.json
 ```
 
-贡献流程见 [CONTRIBUTING.md](CONTRIBUTING.md)，安全问题报告方式见 [SECURITY.md](SECURITY.md)，安全审查记录见 [docs/SECURITY_REVIEW.md](docs/SECURITY_REVIEW.md)，公开发布检查表见 [docs/PUBLIC_RELEASE_CHECKLIST.md](docs/PUBLIC_RELEASE_CHECKLIST.md)。
+贡献流程见 [CONTRIBUTING.md](CONTRIBUTING.md)，社区行为规范见 [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)，安全问题报告方式见 [SECURITY.md](SECURITY.md)，安全审查记录见 [docs/SECURITY_REVIEW.md](docs/SECURITY_REVIEW.md)，公开发布检查表见 [docs/PUBLIC_RELEASE_CHECKLIST.md](docs/PUBLIC_RELEASE_CHECKLIST.md)。
 
 ## 安全边界
 

@@ -1,0 +1,32 @@
+name: Validate
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Run repository security checks
+        run: python3 scripts/security_check.py
+
+      - name: Accept valid POA case
+        run: >-
+          python3 skills/optimize-prompts/scripts/validate_case.py
+          skills/optimize-prompts/references/example-valid-case.json
+
+      - name: Reject invalid POA case
+        run: |
+          if python3 skills/optimize-prompts/scripts/validate_case.py \
+            skills/optimize-prompts/references/example-invalid-case.json; then
+            echo "Invalid fixture was unexpectedly accepted"
+            exit 1
+          fi

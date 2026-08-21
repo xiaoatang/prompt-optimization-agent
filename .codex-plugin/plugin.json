@@ -1,20 +1,32 @@
 {
   "name": "prompt-optimization-agent",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Audit, restructure, compare, and statically validate prompts with explicit intent preservation and decision gates.",
   "author": {
-    "name": "Local developer"
+    "name": "xiaoatang",
+    "url": "https://github.com/xiaoatang"
   },
+  "homepage": "https://github.com/xiaoatang/prompt-optimization-agent#readme",
+  "repository": "https://github.com/xiaoatang/prompt-optimization-agent",
   "license": "MIT",
-  "keywords": ["prompt", "optimization", "audit", "validation", "codex"],
+  "keywords": [
+    "prompt",
+    "optimization",
+    "audit",
+    "validation",
+    "codex"
+  ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Prompt Optimization Agent",
     "shortDescription": "Audits and optimizes prompts without silent intent changes.",
     "longDescription": "A cross-domain Prompt Optimization Agent for Codex. It extracts an evidenced task specification, audits ambiguity and conflicts, exposes material decisions, compiles concise prompt candidates, and reports the strength and limits of validation.",
-    "developerName": "Local developer",
+    "developerName": "xiaoatang",
     "category": "Productivity",
-    "capabilities": ["Interactive", "Write"],
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
     "defaultPrompt": [
       "Audit and optimize this prompt without silently changing its intent.",
       "Compare these two prompts and identify unresolved decision branches.",
